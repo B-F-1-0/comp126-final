@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Solhacks - COMP 126 Final Project</title>
+        <meta name="description" content="COMP 126 Final Project Submission">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="responsive-nav/responsive-nav.css">
+        <script src="responsive-nav/responsive-nav.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="volunteer-page">
+        <div class="header-container">
+            <header>
+                <h1><a href="index.html">SOLHACKS</a></h1>
+
+                <button id="menu-toggle" class="nav-toggle">
+                    <img id="menu-icon" alt="Navigation" src="images/hamburger.png">
+                </button>
+
+            </header>
+
+            <nav class="nav-collapse">
+                <ul class="nav-menu">
+                    <li class="nav-items"><a href="schedule.html">Schedule</a></li>
+                    <li class="nav-items"><a href="workshops.html">Workshops</a></li>
+                    <li class="nav-items"><a href="rules_and_criteria.html">Rules & Criteria</a></li>
+                    <li class="nav-items"><a href="resources.html">Resources</a></li>
+                    <li class="nav-items"><a href="volunteer_and_organize.html">Volunteer</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <img src="images/loteria.png" alt="Picture from SolHacks Lotería event" class="volunteer-photo">
+        
+            <div class="volunteer-buttons">
+                <a href="#" class="volunteer-button">LOGIN</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSePaxrWXZaoiE1bD0doTLQ1kVwXukCLBqjgC1-kmW_IfYUl4Q/viewform" class="volunteer-button" target="_blank">REGISTER</a>
+            </div>
+        
+            <p>Volunteering at SolHacks is a great opportunity to be part of an exciting event that empowers Latino representation in tech. As a volunteer, you’ll help support participants, assist with event logistics, and contribute to creating a welcoming and inclusive environment for everyone. No technical background is required — just a willingness to help, learn, and be part of an amazing community experience!</p>
+        
+        </main>
+
+        <footer>
+            <p>&#169; SOLHACKS 2026</p>
+        </footer>
+
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                customToggle: "#menu-toggle"
+            });
+            document.querySelector("#menu-toggle").addEventListener("click", function () {
+                
+                let menuIcon = document.querySelector("#menu-icon");
+                let navMenu = document.querySelector(".nav-collapse");
+
+                navMenu.classList.toggle("opened");
+            });
+
+        </script>
+    
+    
+    </body>
+
+</html>

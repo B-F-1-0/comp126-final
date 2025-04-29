@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Solhacks - COMP 126 Final Project</title>
+        <meta name="description" content="COMP 126 Final Project Submission">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="responsive-nav/responsive-nav.css">
+        <script src="responsive-nav/responsive-nav.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="schedule-page">
+        <div class="header-container">
+            <header>
+                <h1><a href="index.html">SOLHACKS</a></h1>
+
+                <button id="menu-toggle" class="nav-toggle">
+                    <img id="menu-icon" alt="Navigation" src="images/hamburger.png">
+                </button>
+
+            </header>
+
+            <nav class="nav-collapse">
+                <ul class="nav-menu">
+                    <li class="nav-items"><a href="schedule.html">Schedule</a></li>
+                    <li class="nav-items"><a href="workshops.html">Workshops</a></li>
+                    <li class="nav-items"><a href="rules_and_criteria.html">Rules & Criteria</a></li>
+                    <li class="nav-items"><a href="resources.html">Resources</a></li>
+                    <li class="nav-items"><a href="volunteer_and_organize.html">Volunteer</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <main>
+            <h2 class="day-header">SATURDAY</h2>
+        
+            <div class="schedule">
+                <div class="header">WHEN</div>
+                <div class="header">WHAT</div>
+                <div class="header">WHERE</div>
+        
+                <div class="time">8:00 AM</div>
+                <div class="activity">Check-in & Breakfast</div>
+                <div class="location">Check-in: Lower Lobby<br>Breakfast: Upper Lobby</div>
+        
+                <div class="time">9:00 AM</div>
+                <div class="activity">Opening Ceremony</div>
+                <div class="location">Chapman 201</div>
+        
+                <div class="time">10:00 AM</div>
+                <div class="activity">Hacking Begins</div>
+                <div class="location"></div>
+        
+                <div class="time">10:00 AM</div>
+                <div class="activity">Resume Workshop</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">11:00 AM</div>
+                <div class="activity">Sponsorship Fair</div>
+                <div class="location">Sitterson Lower Lobby</div>
+        
+                <div class="time">12:00 PM</div>
+                <div class="activity">Workshop: IBM</div>
+                <div class="location">Sitterson SN011</div>
+        
+                <div class="time">1:00 PM</div>
+                <div class="activity">Lunch</div>
+                <div class="location">Sitterson Upper Lobby</div>
+        
+                <div class="time">2:00 PM</div>
+                <div class="activity">Workshop: CapTech</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">3:00 PM</div>
+                <div class="activity">Workshop: Wells Fargo</div>
+                <div class="location">Sitterson SN011</div>
+        
+                <div class="time">4:00 PM</div>
+                <div class="activity">Workshop: Fidelity</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">5:00 PM</div>
+                <div class="activity">Dinner</div>
+                <div class="location">Sitterson Upper Lobby</div>
+        
+                <div class="time">6:00 PM</div>
+                <div class="activity">Workshop: SHPE</div>
+                <div class="location">Sitterson SN011</div>
+        
+                <div class="time">7:00 PM</div>
+                <div class="activity">Workshop: Microsoft HOLA</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">8:00 PM</div>
+                <div class="activity">Sleeping Rooms Open</div>
+                <div class="location">Sitterson FB007 & FB008</div>
+        
+                <div class="time">9:00 PM</div>
+                <div class="activity">Break Activity: Lotería</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">10:00 PM – 8:00 AM</div>
+                <div class="activity">Working/Hacking Time</div>
+                <div class="location">Sitterson Lower Lobby</div>
+            </div>
+        
+            <h2 class="day-header">SATURDAY</h2>
+        
+            <div class="schedule">
+                <div class="header">WHEN</div>
+                <div class="header">WHAT</div>
+                <div class="header">WHERE</div>
+    
+                <div class="time">8:00 AM</div>
+                <div class="activity">Breakfast</div>
+                <div class="location">Sitterson Upper Lobby</div>
+        
+                <div class="time">9:00 AM</div>
+                <div class="activity">Sleep Areas Close</div>
+                <div class="location">Sitterson FB007 & FB008</div>
+        
+                <div class="time">10:00 AM</div>
+                <div class="activity">Projects & Videos Due</div>
+                <div class="location">Devpost</div>
+        
+                <div class="time">10:00 AM</div>
+                <div class="activity">Judging</div>
+                <div class="location">Sitterson SN014</div>
+        
+                <div class="time">11:30 AM</div>
+                <div class="activity">Awards, Closing Ceremony & Pizza</div>
+                <div class="location">Sitterson SN014</div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&#169; SOLHACKS 2026</p>
+        </footer>
+
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                customToggle: "#menu-toggle"
+            });
+            document.querySelector("#menu-toggle").addEventListener("click", function () {
+                
+                let menuIcon = document.querySelector("#menu-icon");
+                let navMenu = document.querySelector(".nav-collapse");
+
+                navMenu.classList.toggle("opened");
+            });
+
+        </script>
+    
+    
+    </body>
+
+</html>

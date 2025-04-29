@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Solhacks - COMP 126 Final Project</title>
+        <meta name="description" content="COMP 126 Final Project Submission">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="responsive-nav/responsive-nav.css">
+        <script src="responsive-nav/responsive-nav.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="workshop-page">
+        <div class="header-container">
+            <header>
+                <h1><a href="index.html">SOLHACKS</a></h1>
+
+                <button id="menu-toggle" class="nav-toggle">
+                    <img id="menu-icon" alt="Navigation" src="images/hamburger.png">
+                </button>
+
+            </header>
+
+            <nav class="nav-collapse">
+                <ul class="nav-menu">
+                    <li class="nav-items"><a href="schedule.html">Schedule</a></li>
+                    <li class="nav-items"><a href="workshops.html">Workshops</a></li>
+                    <li class="nav-items"><a href="rules_and_criteria.html">Rules & Criteria</a></li>
+                    <li class="nav-items"><a href="resources.html">Resources</a></li>
+                    <li class="nav-items"><a href="volunteer_and_organize.html">Volunteer</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+
+            <img src="images/workshop1.jpg" alt="picture of SolHacks workshop" class="workshop-photo">
+
+            <h2>IBM: Innovating with IBM: Career Journeys, Challenges, and Future Insights</h2>
+            <p>Join IBM professionals as they share their unique career journeys, the challenges they’ve overcome, and key insights about the future of technology and innovation. This workshop offers an inside look at how one of the world’s leading tech companies evolves in a rapidly changing industry and provides advice for students preparing to enter the workforce.</p>
+        
+            <h2>CapTech: Code, Collaborate, Conquer: Agile and the Software Development Lifecycle</h2>
+            <p>Learn how real-world software is built using Agile methodologies! CapTech consultants will walk you through the Software Development Lifecycle (SDLC) — from initial brainstorming to deployment — and show how teamwork, collaboration, and adaptability are key to successful tech projects. Expect practical tips you can apply to your own hackathon projects and beyond.</p>
+        
+            <img src="images/workshop2.jpeg" alt="picture of SolHacks workshop" class="workshop-photo">
+            <h2>Wells Fargo: Interview Prep: How to have a Successful Interview</h2>
+            <p>Master the art of interviewing with advice straight from hiring professionals at Wells Fargo. In this session, you'll learn how to confidently prepare for technical and behavioral interviews, structure your answers, and make a memorable impression on recruiters. Whether you're preparing for your first job or an internship, this workshop will set you up for success.</p>
+        
+            <h2>Fidelity: Tips on How to Land a Tech Internship/Full-time Job Post Graduation</h2>
+            <p>Want to land that dream internship or tech role after graduation? Representatives from Fidelity will offer practical advice on how to stand out during your job search, from building a strong resume and LinkedIn profile to networking effectively and navigating the application process. Get ready to leave with actionable steps toward securing your next opportunity.</p>
+        
+            <h2>Microsoft HOLA: Leading Women in Tech Panel</h2>
+            <p>Hear from inspiring Latina leaders in tech during this panel hosted by Microsoft HOLA (Hispanic and Latinx Organization of Leaders in Action). Panelists will discuss their experiences breaking barriers, navigating career paths, and building supportive communities in the tech industry. This empowering session is open to everyone interested in fostering diversity and leadership in tech spaces.</p>
+            
+            <img src="images/workshop3.jpeg" alt="picture of SolHacks workshop" class="workshop-photo">
+            <h2>SHPE: Non-SWE Careers in Tech</h2>
+            <p>Tech isn’t just for coders! SHPE (Society of Hispanic Professional Engineers) will introduce you to exciting non-software engineering careers available in the tech world — from product management to UX design to technical consulting. Learn how you can leverage your skills to find a fulfilling tech career even if coding isn’t your primary passion.</p>
+        
+            <h2>Lauren Lascano: Shine Bright: Crafting a FAANG-Worthy Resume</h2>
+            <p>Lauren Lascano, the UNC Latinos in Tech Technical Programming Chair and an incoming Software Engineering Intern at Apple, shares her insider knowledge on building a resume that captures the attention of top tech companies. Learn how to highlight your experiences, frame your skills effectively, and create a FAANG-worthy resume that opens doors to exciting career opportunities.</p>
+        
+        </main>
+
+        <footer>
+            <p>&#169; SOLHACKS 2026</p>
+        </footer>
+
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                customToggle: "#menu-toggle"
+            });
+            document.querySelector("#menu-toggle").addEventListener("click", function () {
+                
+                let menuIcon = document.querySelector("#menu-icon");
+                let navMenu = document.querySelector(".nav-collapse");
+
+                navMenu.classList.toggle("opened");
+            });
+
+        </script>
+    
+    
+    </body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Solhacks - COMP 126 Final Project</title>
+        <meta name="description" content="COMP 126 Final Project Submission">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="responsive-nav/responsive-nav.css">
+        <script src="responsive-nav/responsive-nav.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header-container">
+            <header>
+                <h1><a href="index.html">SOLHACKS</a></h1>
+
+                <button id="menu-toggle" class="nav-toggle">
+                    <img id="menu-icon" alt="Navigation" src="images/hamburger.png">
+                </button>
+
+            </header>
+
+            <nav class="nav-collapse">
+                <ul class="nav-menu">
+                    <li class="nav-items"><a href="schedule.html">Schedule</a></li>
+                    <li class="nav-items"><a href="workshops.html">Workshops</a></li>
+                    <li class="nav-items"><a href="rules_and_criteria.html">Rules & Criteria</a></li>
+                    <li class="nav-items"><a href="resources.html">Resources</a></li>
+                    <li class="nav-items"><a href="volunteer_and_organize.html">Volunteer</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="home-content">
+                <img class="home-image" src="images/group.jpg" alt="SOLHACKS 2025 participants">
+                <p id="mission-statement">Creating a welcoming and inclusive environment for Latinos in tech, fostering representation, building networks, and empowering innovation in the community</p>
+                <a target="_blank" id="register" href="https://docs.google.com/forms/d/e/1FAIpQLScw2WaOT411r3Fi4dssxnd-cn0leO0-bYqXQMl3il0msOxlUw/viewform">REGISTER</a>
+            </div>
+            
+            <div class="home-text">
+                <h2 class="home-header">Welcome to SolHacks!</h2>
+                    <p class="home-body">SolHacks is UNC-Chapel Hill’s first Latino-led hackathon, dedicated to creating an inclusive space for Latinos and other underrepresented groups in technology. Our mission is to break barriers, foster innovation, and empower the next generation of leaders in tech. We believe that innovation thrives when diverse voices, experiences, and ideas come together — and SolHacks was built to make that happen.</p>
+
+                    <p class="home-body">At SolHacks, students of all skill levels are invited to collaborate, build projects, and develop solutions to real-world problems. Whether you’re a beginner writing your first line of code or an experienced developer leading a team, there’s a place for you here. We offer workshops, mentorship sessions, and panels with industry professionals to help participants learn new skills, explore new technologies, and gain valuable career insights.</p>
+                        
+                    <p class="home-body">More than just a competition, SolHacks is about building community. We are passionate about creating an environment where participants feel supported, respected, and inspired to challenge themselves. Throughout the event, you’ll have opportunities to network with peers, meet professionals from leading companies, and develop meaningful relationships that extend beyond the hackathon.</p>
+                        
+                    <p class="home-body">We are committed to making technology more accessible and representative of the communities it serves. SolHacks is a celebration of creativity, resilience, and the power of representation. By participating, you’re not just building a project — you’re helping to build a more inclusive future for tech.</p>
+                        
+                    <p class="home-body">We can’t wait to see what you create. Welcome to SolHacks — where innovation begins, and community drives the future!</p>
+            </div>
+
+            <footer>
+                <p>&#169; SOLHACKS 2026</p>
+            </footer>
+        </main>
+
+        <script>
+            var nav = responsiveNav(".nav-collapse", {
+                customToggle: "#menu-toggle"
+            });
+            console.log("START!");
+            document.querySelector("#menu-toggle").addEventListener("click", function () {
+                
+                let menuIcon = document.querySelector("#menu-icon");
+                let navMenu = document.querySelector(".nav-collapse");
+    
+                navMenu.classList.toggle("opened");
+            });
+        </script>
+    </body>
+    
+</html>
